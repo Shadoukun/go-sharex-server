@@ -1,0 +1,24 @@
+<html>
+
+<head>
+    <meta name="theme-color" content="#DC603A">
+    <meta property="og:title" content={{.Title}}>
+    <meta property="og:description" content=Paste>
+    <link rel="stylesheet" href="/static/css/agate.css">
+    <link rel="stylesheet" href="/static/css/paste.css">
+    <script type="text/javascript" src="/static/js/highlight.pack.js"></script>
+</head>
+
+<body>
+    <pre><code id="code">{{.Data}}</code></pre>
+    <script>
+        var code = document.getElementById("code")
+        var lang = window.location.search.slice(1);
+        if (lang != "") {
+            code.className = lang
+            hljs.initHighlightingOnLoad()
+        }
+    </script>
+    </body>
+    
+</html>

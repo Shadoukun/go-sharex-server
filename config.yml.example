@@ -1,0 +1,18 @@
+host: "127.0.0.1"
+port: "80"
+
+# Permissions
+admin:
+    password: "test"
+    maxupload: 20
+    filetypes: [.png, .jpg, .gif, .mp4, .mp3, .jpeg, .tiff,
+                .bmp, .ico, .psd, .eps, .raw, .cr2, .nef,
+                .sr2, .orf, .svg, .wav, .webm, .aac, .flac,
+                .ogg, .wma, .m4a, .gifv]
+default:
+    password: "test2"
+    maxupload: 10
+    filetypes: [.png, .jpg, .gif, .mp4, .mp3, .jpeg, .tiff,
+                .bmp, .ico, .psd, .eps, .raw, .cr2, .nef,
+                .sr2, .orf, .svg, .wav, .webm, .aac, .flac,
+                .ogg, .wma, .m4a, .gifv]
